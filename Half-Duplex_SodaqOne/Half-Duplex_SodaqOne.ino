@@ -116,8 +116,18 @@ function Decoder(bytes, port) {
 //   return decodedd;
 // }
 
- *
- */
+*
+*/
+
+/* Co Author: Frank Montenij
+
+I, Frank Montenij moved the code in a repository so it is compatible with the arduino IDE to upload the code.
+Furthermore I moved the code to connect to TTN to a seperate function and added the timer functionality. 
+I also added the function request event 
+and changed receive_event so it is able to support the request from the half-duplex system if LoRaWAN has reach.
+Another change I made in the receive event function is that it now supports DAB_id's to be bigger than 255.
+
+*/
 #include "Custom_GPS.h"
 #include "rn2xx3.h"
 #include <Wire.h>
